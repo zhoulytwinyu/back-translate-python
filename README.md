@@ -9,7 +9,7 @@ pip install git+https://github.com/zhoulytwinyu/back-translate-python.git
 
 ## Uninstall
 ```
-pip unstall backtranslate 
+pip unstall back-translate 
 ```
 
 ## Usage
