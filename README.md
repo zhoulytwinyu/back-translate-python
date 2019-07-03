@@ -19,7 +19,7 @@ This package includes a script which can be invoked in bash.
 back-translate.py <SEQUENCE> <GC_LOWER_BOUND> <GC_UPPER_BOUND>
 ```
 * <SEQUENCE> must be a 1-letter coded, non-degererative amino acid sequence. "*" may be used as the stop.
-* <GC_LOWER_BOUND> <GC_UPPER_BOUND>
+* <GC_LOWER_BOUND> <GC_UPPER_BOUND> are floating point number within 0.0 - 1.0.
 
 ## Algorithm highlight (Greedy algorithm)
 
