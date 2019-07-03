@@ -4,7 +4,7 @@ Back translate peptide sequences into nucleotide sequences within a given GC con
 
 ## Install
 ```
-pip install zhoulytwinyu/back-translate-python
+pip install git+https://github.com/zhoulytwinyu/back-translate-python.git
 ```
 
 ## Uninstall
@@ -33,3 +33,6 @@ back-translate.py <SEQUENCE> <GC_LOWER_BOUND> <GC_UPPER_BOUND>
   * When picking codon for amino acids, we note down the GC content of all the picked amino acids and try to choose a codon that brings GC content closer to our target GC range (being greedy here).
 ### Put the codons back to align with the peptide sequence
 * Iterate through the given peptide sequence, choose at random (smoother local GC content) without replacement from our picked codons for the amino acids.
+
+## Caution
+This algorithm is essentially probabilistic and may under certain circumstances not able to generate nucleotide sequences within given GC range. In fact, the algorithm only try to optimize sequence toward target GC range; it does not double check whether the generated sequence is indeed within that range. In most cases, it works fine.
